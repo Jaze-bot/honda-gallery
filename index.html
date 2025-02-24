@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honda Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="addTabIndex()">
+
+    <div id="image" aria-live="polite">Hover or focus on a Honda image below to display here.</div>
+
+    <div id="gallery">
+        <div class="preview" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()" onclick="displayFull(this)" role="button" aria-label="Honda Civic preview">
+            <img alt="Honda Civic" src="images/honda_civic.jpg" data-debug="civic">
+        </div>
+        <div class="preview" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()" onclick="displayFull(this)" role="button" aria-label="Honda Accord preview">
+            <img alt="Honda Accord" src="images/honda_accord.jpg" data-debug="accord">
+        </div>
+        <div class="preview" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()" onclick="displayFull(this)" role="button" aria-label="Honda CR-V preview">
+            <img alt="Honda CR-V" src="images/honda_crv.jpg" data-debug="crv">
+        </div>
+        <div class="preview" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()" onclick="displayFull(this)" role="button" aria-label="Honda Pilot preview">
+            <img alt="Honda Pilot" src="images/honda_pilot.jpg" data-debug="pilot">
+        </div>
+         <div class="preview" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()" onclick="displayFull(this)" role="button" aria-label="Honda HR-V preview">
+            <img alt="Honda HR-V" src="images/honda_hrv.jpg" data-debug="hrv">
+        </div>
+        <div class="preview" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()" onclick="displayFull(this)" role="button" aria-label="Honda Odyssey preview">
+            <img alt="Honda Odyssey" src="images/honda_odyssey.jpg" data-debug="odyssey">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
